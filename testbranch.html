@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Sample</title>
+    <title>Bootstrap Enhanced</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -19,7 +20,15 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#services">Service 1</a></li>
+                            <li><a class="dropdown-item" href="#services">Service 2</a></li>
+                            <li><a class="dropdown-item" href="#services">Service 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -29,18 +38,26 @@
     <!-- Hero Section -->
     <header class="bg-primary text-white text-center py-5">
         <div class="container">
-            <h1>welcome to git hub session</h1>
-            <p class="lead">A responsive website built with Bootstrap</p>
-            <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+            <i class="fas fa-code fa-3x mb-3"></i>
+            <h1>Welcome to the GitHub Session</h1>
+            <p class="lead">Learn, Build, and Collaborate with Bootstrap</p>
+            <a href="#about" class="btn btn-outline-light btn-lg">Explore More</a>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="container my-5">
         <!-- About Section -->
-        <section id="about">
+        <section id="about" class="text-center">
             <h2 class="text-center mb-4">About Us</h2>
-            <p class="text-center">We are a team dedicated to delivering quality services to our customers.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/400x300" alt="About Us" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <p>We are a team dedicated to delivering quality services to our customers. Our mission is to empower developers to build robust and scalable web applications using modern tools.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Services Section -->
@@ -49,20 +66,23 @@
             <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="p-3 border bg-light">
-                        <h3>Service 1</h3>
-                        <p>Details about service 1.</p>
+                        <i class="fas fa-laptop-code fa-2x mb-2"></i>
+                        <h3>Web Development</h3>
+                        <p>Build responsive and modern websites with cutting-edge technologies.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="p-3 border bg-light">
-                        <h3>Service 2</h3>
-                        <p>Details about service 2.</p>
+                        <i class="fas fa-database fa-2x mb-2"></i>
+                        <h3>Database Management</h3>
+                        <p>Design, implement, and optimize secure databases for your applications.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="p-3 border bg-light">
-                        <h3>Service 3</h3>
-                        <p>Details about service 3.</p>
+                        <i class="fas fa-cloud fa-2x mb-2"></i>
+                        <h3>Cloud Solutions</h3>
+                        <p>Deploy scalable and efficient solutions on the cloud to grow your business.</p>
                     </div>
                 </div>
             </div>
@@ -71,10 +91,17 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        &copy; 2024 MySite. All rights reserved.
+        <p>&copy; 2024 MySite. All rights reserved.</p>
+        <div class="d-flex justify-content-center">
+            <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
